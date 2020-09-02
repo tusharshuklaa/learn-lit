@@ -6,7 +6,7 @@ module.exports = class Docs {
   data() {
     return {
       layout: 'page.11ty.cjs',
-      title: '<my-element> ⌲ Docs',
+      title: '<timer-btn> ⌲ Docs',
     };
   }
 
@@ -27,7 +27,7 @@ module.exports = class Docs {
         ${renderTable(
           'Properties',
           ['name', 'attribute', 'description', 'type', 'default'],
-          tag.properties)}  
+          tag.properties)}
         ${/*
            * Methods are not output by web-component-analyzer yet (a bug), so
            * this is a placeholder so that at least _something_ will be output
@@ -41,11 +41,11 @@ module.exports = class Docs {
         ${renderTable(
           'Events',
           ['name', 'description'],
-          tag.events)}    
+          tag.events)}
         ${renderTable(
           'Slots',
           ['name', 'description'],
-          tag.slots)}  
+          tag.slots)}
         ${renderTable(
           'CSS Shadow Parts',
           ['name', 'description'],
